@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>俄罗斯方块</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="start-container">
+        <p>一款属于程序员的俄罗斯方块</p>
+        <p>Tetris belongs to a programmer</p>
+        <p><button id="btn-start">开始游戏</button></p>
+    </div>
+    <div class="game-container">
+        <div class="time-panel">
+            <div class="panel-header">
+                游戏时间
+            </div>
+            <div class="panel-body">
+                <canvas id="timer"></canvas>
+            </div>
+        </div>
+        <div class="help-panel">
+            <div class="panel-body">
+                <p> ↑ 翻转</p>
+                <p> ↓ 加速</p>
+                <p>→右移</p>
+                <p>←左移</p>
+            </div>
+        </div>
+        <div class="level-panel">
+            <div class="panel-header">
+                当前级别
+            </div>
+            <div class="panel-body">
+                <canvas id="level"></canvas>
+            </div>
+        </div>
+        <div class="game-main-panel">
+            <canvas id="c_game_main"></canvas>
+        </div>
+        <div class="next-panel">
+            <div class="panel-header">
+                下一方块
+            </div>
+            <div class="panel-body">
+                <canvas id="nextshape"></canvas>
+            </div>
+        </div>
+        <div class="setting-panel">
+            <div class="panel-body">
+                <button id="btn-game-pause">暂停</button><br><br>
+            </div>
+        </div>
+        <div class="score-panel">
+            <div class="panel-header">
+                当前得分
+            </div>
+            <div class="panel-body">
+                <canvas id="score"></canvas>
+            </div>
+        </div>
+        <div class="high-score-panel">
+            <div class="panel-header">
+                最高得分
+            </div>
+            <div class="panel-body">
+                <canvas id="highscore"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="./js/config.js"></script>
+    <script src="./js/ResourceManager.js"></script>
+    <script src="./js/Canvas.js"></script>
+    <script src="./js/Toast.js"></script>
+    <script src="./js/Keyboard.js"></script>
+    <script src="./js/Score.js"></script>
+    <script src="./js/Timer.js"></script>
+    <script src="./js/Level.js"></script>
+    <script src="./js/NextShape.js"></script>
+    <script src="./js/HighScore.js"></script>
+    <script src="./js/Block.js"></script>
+    <script src="./js/Shape.js"></script>
+    <script src="./js/Board.js"></script>
+    <script src="./js/Tetris.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

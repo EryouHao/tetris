@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+html,
+body,
+div {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #000;
+    color: #00CC66;
+}
+.game-container, .start-container {
+    position: relative;
+    box-sizing: content-box;
+    height: 600px;
+    width: 590px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 1px dashed #00CC66;
+}
+.game-container {
+    display: none;
+}
+.start-container {
+    background: #000;
+}
+.start-container p {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 24px;
+}
+.start-container p button {
+    position: absolute;
+    bottom: 30px;
+    left: 200px;
+    width: 200px;
+    height: 40px;
+    line-height: 38px;
+    font-size: 18px;
+    font-family: '微软雅黑';
+    border: 1px dashed #00CC66;
+    color: #00CC66;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: all .5s;
+}
+.start-container p button:hover {
+    background: #00CC66;
+    color: #000;
+}
+.game-main-panel {
+    position: absolute;
+    left: 100px;
+    top: 0;
+    width: 390px;
+    height: 600px;
+    border-left: 1px dashed #00CC66;
+    border-right: 1px dashed #00CC66;
+}
+.time-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+}
+.help-panel {
+    position: absolute;
+    left: 0;
+    top: 150px;
+    width: 100px;
+}
+.level-panel {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+}
+.next-panel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+}
+.setting-panel {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    width: 100px;
+}
+.score-panel {
+    position: absolute;
+    right: 0;
+    bottom: 120px;
+    width: 100px;
+    height: 100px;
+}
+.high-score-panel {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+}
+.panel-header {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 10px;
+    color: #00CC66;
+}
+.panel-body {
+    text-align: center;
+    line-height: 70px;
+    font-size: 12px;
+}
+.help-panel .panel-body,
+.setting-panel .panel-body {
+    line-height: normal;
+}
+.time-panel, .next-panel, .score-panel {
+    border-bottom: 1px dashed #00CC66;
+}
+#btn-game-pause {
+    background: transparent;
+    color: #00CC66;
+    border: 1px dashed #00CC66;
+    padding: 5px 10px;
+    cursor: pointer;
+    outline: none;
+}
+.toast {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -50px;
+    border: 1px dashed #00CC66;
+    width: 200px;
+    height: 100px;
+    background: #000;
+    text-align: center;
+    line-height: 24px;
+}
+.toast .btn {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    width: 50px;
+    height: 30px;
+    margin-left: -25px;
+    line-height: 30px;
+    border: 1px dashed #00CC66;
+}
