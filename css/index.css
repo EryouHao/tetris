@@ -157,3 +157,10 @@ body {
     line-height: 30px;
     border: 1px dashed #00CC66;
 }
+.contact {
+    margin: 10px auto;
+    text-align: center;
+}
+.contact a {
+    color: #00CC66;
+}
